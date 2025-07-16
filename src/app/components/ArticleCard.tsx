@@ -20,7 +20,7 @@ export default function ArticleCard({ article, isFeatured = false }: ArticleCard
     <article
       className={`bg-white p-2 ${
         isFeatured ? 'lg:col-span-2' : ''
-      } rounded shadow-sm transition hover:shadow-md`}
+      } rounded  transition hover:shadow-md`}
     >
       <Link href={`/${article.category}/${article.slug}`} className="block mb-4">
         <div className="rounded overflow-hidden relative aspect-video">
