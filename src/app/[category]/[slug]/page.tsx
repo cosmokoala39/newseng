@@ -2,6 +2,15 @@ import { notFound } from "next/navigation";
 import fs from "fs/promises";
 import path from "path";
 import DetailHeader from "../../components/DetailHeader";
+import ShareToolbar from "@/app/components/ShareToolbar";
+import Details from "@/app/components/Details";
+import ShareMenu from "@/app/components/ShareMenu";
+import CategorySideAd from "@/app/components/CategorySideAd";
+import FollowUs from "@/app/components/FollowUs";
+import MostRead from "@/app/components/MostRead";
+import CategorySideAd_2 from "@/app/components/CategorySideAd_2";
+import CategorySideAd_3 from "@/app/components/CategorySideAd_3";
+import GastronomyFeature from "@/app/components/GastronomyFeature";
 
 
 
@@ -53,7 +62,23 @@ export default async function Page({
 // const isClientSlug = category==="politics" && slug === "puerto-ricos-former-governor-vindicated-in-historic-legal-twist";
     return(
         <div className='container mx-auto'>
-            <DetailHeader article={article}/>
+            <ShareMenu/>
+            <div className="flex flex-wrap mx-4">
+                <div className=" md:w-8/12 lg:w-9/12">
+                    <DetailHeader article={article}/>
+                    <ShareToolbar/>
+                    
+                    <Details article={article}/>
+                </div>
+                <div className="w-full md:w-1/3 lg:w-1/4 rounded ">
+                  <CategorySideAd/>
+                  <FollowUs/>
+                <MostRead articles={articles}/>
+                <CategorySideAd_2/>
+                <CategorySideAd_3/>
+                <GastronomyFeature/>
+                </div>
+            </div>    
         </div>
     )
    } catch (error) {

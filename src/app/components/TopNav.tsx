@@ -25,7 +25,7 @@ export default function TopNav() {
 
   return (
     <>
-      <div className={`w-full border-b bg-white shadow-sm sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-5'}`}>
+      <div className={`w-full  bg-white shadow-sm sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-5'}`}>
         <div className="flex items-center justify-between px-4 md:px-8 transition-all duration-300">
           {/* Left Section: Logo only */}
           <div className="flex items-center space-x-4">

@@ -17,7 +17,10 @@ export default function DetailHeader ({article}:DetailHeaderProps){
           <Home size={18} />
         </Link>
         <span>&gt;</span>
-        <span className="capitalize text-gray-400">{article.category}</span>/
+        <Link href={`/${article.category}`}>
+          <span className="capitalize text-gray-400 hover:text-gray-700">{article.category}</span>
+        </Link>
+        /
         <span className="capitalize text-gray-400">{article.slug}</span>
       </nav>
 
