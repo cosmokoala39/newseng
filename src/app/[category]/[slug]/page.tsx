@@ -61,7 +61,7 @@ export default async function Page({
     if (!article) return notFound();
 // const isClientSlug = category==="politics" && slug === "puerto-ricos-former-governor-vindicated-in-historic-legal-twist";
     return(
-        <div className='container mx-auto'>
+        <div className=' w-full'>
             <ShareMenu/>
             <div className="flex flex-wrap mx-4">
                 <div className=" md:w-8/12 lg:w-9/12">

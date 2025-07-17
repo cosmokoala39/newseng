@@ -14,7 +14,7 @@ export default function Mainheader () {
       </nav>
 
       
-      <h1 className="text-3xl font-bold capitalize mb-6">HEADLINES</h1>
+      <h1 className="text-3xl font-bold capitalize mb-4 p-4">HEADLINES</h1>
 
       
         <section className="hidden md:flex bg-gray-100 px-4 py-3 border-l-4 border-cyan-800 items-center gap-6">

@@ -53,11 +53,11 @@ export default async function CategoryPage({ params }: PageProps) {
   const [featured, ...others] = articles;
   const sideArticles = others.slice(0, 2);
   return (
-    <div className='container mx-auto'>
+    <div className=' w-full'>
       <CategoryHeader articles={articles}/>
       <div className="flex flex-wrap mx-4">
         <div className="md:w-8/12 lg:w-9/12">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container  px-4">
              <ArticleCard article={featured} isFeatured />
              <div className="flex flex-col gap-4">
                {sideArticles.map((article, index) => (
