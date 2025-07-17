@@ -23,13 +23,13 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
   const [featured, ...others] = filtered;
 
   return (
-    <div className="my-10 ">
+    <div className="my-10 px-5 md:px-0">
       {/* Heading */}
       <div className="flex items-center justify-between mb-6 mt-3 border-t border-t-gray-300">
         <h2 className="text-3xl font-bold mt-5">
           <span className="font-bold"> News</span> In <span className='uppercase font-medium'>{category}</span>
         </h2>
-        <Link href={`/${category}`} className="text-black underline font-semibold text-sm hover:no-underline">
+        <Link href={`/${category}`} className="text-gray-900 font-semibold underline text-sm hover:no-underline">
           Show More <span aria-hidden>›</span>
         </Link>
       </div>
@@ -52,7 +52,7 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
               <p className="text-sm text-red-600 font-semibold uppercase">
                 {featured.tag || 'NEWS'} - 
               </p>
-              <h3 className="text-2xl font-bold mt-1 leading-tight">
+              <h3 className="text-2xl font-medium mt-1 leading-tight">
                 <Link href={`/${featured.category}/${featured.slug}`}>
                   {featured.title}
                 </Link>
@@ -81,7 +81,7 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
               </p>
                 <Link
                   href={`/${item.category}/${item.slug}`}
-                  className="text-base font-semibold text-[15px]  leading-snug"
+                  className="text-base  text-[15px]  leading-snug"
                 >
                   {item.title}
                 </Link>

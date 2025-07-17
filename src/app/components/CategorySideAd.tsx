@@ -5,7 +5,7 @@ import React from 'react'
 const CategorySideAd = () => {
   return (
     <div>
-      <div className="overflow-hidden relative p-0.5">
+      <div className="overflow-hidden relative p-2">
         <div className="p-7 flex items-center rounded gap-7 bg-white" >
           <div className="flex flex-col items-center p-4 rounded-lg shadow-md w-fit space-y-4" style={{ backgroundColor: "#fcf3d9" }}>
            

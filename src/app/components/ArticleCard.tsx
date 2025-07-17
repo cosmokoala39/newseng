@@ -18,7 +18,7 @@ interface ArticleCardProps {
 export default function ArticleCard({ article, isFeatured = false }: ArticleCardProps) {
   return (
     <article
-      className={`bg-white p-2 ${
+      className={`bg-white mt-2 p-2 ${
         isFeatured ? 'lg:col-span-2' : ''
       } rounded  transition hover:shadow-md`}
     >
@@ -39,12 +39,12 @@ export default function ArticleCard({ article, isFeatured = false }: ArticleCard
       <div className="text-red-700 text-sm uppercase mb-1">{article.category}</div>
 
       <h2
-        className={`font-semibold leading-snug ${
-          isFeatured ? 'text-[26px]' : 'text-[20px]'
+        className={`font- leading-snug ${
+          isFeatured ? 'text-[26px]' : 'text-[18px]'
         }`}
       >
         <Link href={`/${article.category}/${article.slug}`}>
-          <span className=" transition-colors cursor-pointer">
+          <span className=" transition-colors cursor-pointer text-gray-800 font-[550]">
             {article.title}
           </span>
         </Link>

@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from 'react';
 import politics from "../data/politics.json"
 import business from "../data/business.json" 
 import health from "../data/health.json"
@@ -20,6 +17,7 @@ import CategorySideAd_3 from './components/CategorySideAd_3';
 import RealEstateLinks from './components/RealEstateLinks';
 import FloatingAd from './components/FloatingAd';
 import LocalNews from './components/LocalNews';
+import ToggleContentWithLoading from './components/ToggleContentWithLoading';
 
 
 
@@ -41,33 +39,31 @@ const mergedArticles: Article[] = [
   ...technology
 ]
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
 
-  const toggleContent = () => {
-    setIsVisible((prev) => !prev);
-  };
+
+  
    const [featured, ...others] = mergedArticles;
   const sideArticles = others.slice(0, 2);
   return (
     <>
-    <div className=' w-full'>
+    <div className='mx-0 md:mx-8 '>
         <Mainheader/>
-        <div className="flex flex-wrap mx-4">
+        <div className="flex flex-wrap mx-0 md:mx-4">
         <div className="md:w-8/12 lg:w-9/12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container  px-4">
            <ArticleCard article={featured} isFeatured />
-           <div className="flex flex-col gap-4">
+           <div className="flex flex-col gap-4 ml-2">
               {sideArticles.map((article, index) => (
                 <ArticleCard key={`${article.slug}-${index}`} article={article} />
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-2">
             {others.slice(3,12).map((article, index) => (
               <ArticleCard key={article.slug ?? index} article={article} />
             ))}
           </div>
-          <CategoryImageBlock/>
+          <CategoryImageBlock articles={mergedArticles}/>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {others.slice(3,21).map((article, index) => (
               <ArticleCard key={article.slug ?? index} article={article} />
@@ -86,24 +82,7 @@ export default function Home() {
             ))}
           </div>
           <div className="w-full mb-14">
-           {isVisible && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {mergedArticles.slice(12).map((article, index) => (
-                <ArticleCard key={article.slug ?? index} article={article} />
-              ))}
-            </div>
-           )}
-     
-           <div className="w-full bg-[#f0f0f0] py-4 text-center">
-            <button
-              type="button"
-              onClick={toggleContent}
-              className="text-black font-semibold uppercase tracking-wider text-sm focus:outline-none"
-            >
-              {isVisible ? 'Show less' : 'Show more'}{' '}
-              <span>{isVisible ? '▲' : '▼'}</span>
-            </button>
-          </div>
+           <ToggleContentWithLoading mergedArticles={mergedArticles}/>
          </div>
          </div>
 

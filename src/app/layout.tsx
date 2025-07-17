@@ -7,6 +7,7 @@ import Head from "next/head";
 import "../lib/fontawsome"
 
 import TopNav from "./components/TopNav";
+import HeaderLinks from "./components/HeaderLinks";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <HeaderLinks/>
         <TopNav/>
         {children}
         <Footer/>

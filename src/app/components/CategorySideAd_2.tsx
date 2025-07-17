@@ -6,7 +6,7 @@ const CategorySideAd_2 = () => {
     <div>
       <div className="overflow-hidden relative p-0.5">
         
-          <div className="flex flex-col items-center p-4 rounded-lg shadow-md w-fit space-y-4" >
+          <div className="flex flex-col items-center p-8   w-fit space-y-4" >
             <Image 
                 alt="couverture journal" 
                 width={300} 

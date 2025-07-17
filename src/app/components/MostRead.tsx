@@ -13,7 +13,7 @@ interface MostReadProps {
 export default function MostRead({ articles }: MostReadProps) {
   return (
     <div className='p-5'>
-    <div className="p-4 border-gray-300 border rounded bg-white max-w-md">
+    <div className="p-8 border-gray-300 border rounded bg-white max-w-md">
       <h2 className="text-xl font-bold mb-4">Most Read</h2>
       <ol className="space-y-4">
         {articles.map((article, index) => (

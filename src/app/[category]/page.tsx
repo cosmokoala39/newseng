@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: PageProps) {
   const [featured, ...others] = articles;
   const sideArticles = others.slice(0, 2);
   return (
-    <div className=' w-full'>
+    <div className='mx-0 md:mx-8'>
       <CategoryHeader articles={articles}/>
       <div className="flex flex-wrap mx-4">
         <div className="md:w-8/12 lg:w-9/12">
@@ -70,9 +70,9 @@ export default async function CategoryPage({ params }: PageProps) {
               <ArticleCard key={article.slug ?? index} article={article} />
             ))}
           </div>
-        <CategoryImageBlock/>
+        <CategoryImageBlock articles={articles}/>
         <CategoryNews articles={articles}/>
-        <CategoryImageBlock/>
+        <CategoryImageBlock articles={articles}/>
         <CategoryNews articles={articles}/>
         </div>
         <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
