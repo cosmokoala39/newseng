@@ -4,6 +4,7 @@ import React from 'react';
 
 const GastronomyFeature: React.FC = () => {
   return (
+    <div className='sticky top-24'>
     <div className=" mt-5 prose max-w-none bg-white p-6 rounded-md shadow-md">
       <h2 className="text-2xl font-semibold text-amber-600 mb-4">
         Food: recipes, advice, and culinary events
@@ -28,6 +29,7 @@ const GastronomyFeature: React.FC = () => {
         </Link>{' '}
         Featuring recipes by chefs from the Centre-Val de Loire and Poitou regions, food-related events, and in-depth reports on wine and winemaking.
       </p>
+    </div>
     </div>
   );
 };

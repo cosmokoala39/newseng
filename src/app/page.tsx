@@ -12,6 +12,14 @@ import Mainheader from "./components/Mainheader";
 import ArticleCard from "./components/ArticleCard"
 import CategoryImageBlock from "./components/CategoryImageBlock"
 import CategorySideAd from './components/CategorySideAd';
+import FollowUs from './components/FollowUs';
+
+import MainMostread from './components/MainMostread';
+import CategorySideAd_2 from './components/CategorySideAd_2';
+import CategorySideAd_3 from './components/CategorySideAd_3';
+import RealEstateLinks from './components/RealEstateLinks';
+import FloatingAd from './components/FloatingAd';
+import LocalNews from './components/LocalNews';
 
 
 
@@ -41,8 +49,10 @@ export default function Home() {
    const [featured, ...others] = mergedArticles;
   const sideArticles = others.slice(0, 2);
   return (
+    <>
     <div className='container mx-auto'>
         <Mainheader/>
+        <div className="flex flex-wrap mx-4">
         <div className="md:w-8/12 lg:w-9/12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container mx-auto px-4">
            <ArticleCard article={featured} isFeatured />
@@ -59,14 +69,26 @@ export default function Home() {
           </div>
           <CategoryImageBlock/>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {others.slice(12).map((article, index) => (
+            {others.slice(3,21).map((article, index) => (
+              <ArticleCard key={article.slug ?? index} article={article} />
+            ))}
+          </div>
+          <LocalNews category="business" articles={mergedArticles} />
+          <LocalNews category="politics" articles={mergedArticles} />
+          <LocalNews category="health" articles={mergedArticles} />
+          <LocalNews category="sports" articles={mergedArticles} />
+          <LocalNews category="science" articles={mergedArticles} />
+          <LocalNews category="technology" articles={mergedArticles} />
+          <div className='text-3xl font-bold mt-5 mb-5 px-5'>All The News</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {mergedArticles.slice(0,12).map((article, index) => (
               <ArticleCard key={article.slug ?? index} article={article} />
             ))}
           </div>
           <div className="w-full mb-14">
            {isVisible && (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {others.slice(12).map((article, index) => (
+              {mergedArticles.slice(12).map((article, index) => (
                 <ArticleCard key={article.slug ?? index} article={article} />
               ))}
             </div>
@@ -83,10 +105,19 @@ export default function Home() {
             </button>
           </div>
          </div>
-        </div>
-        <div className="w-full md:w-1/3 lg:w-1/4 rounded ">
+         </div>
+
+         <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
             <CategorySideAd/>
+            <FollowUs/>
+              <MainMostread  articles={others.slice(17)} />
+              <CategorySideAd_2/>
+              <CategorySideAd_3/>
+              <RealEstateLinks/>
+              <FloatingAd/>
+          </div>
+         </div>
         </div>
-    </div>
+        </>
   );
 }
