@@ -14,7 +14,7 @@ interface CategoryImageBlockProps{
 
 export default function CategoryImageBlock ({articles}:CategoryImageBlockProps) {
   return (
-    <div className="px-4 my-5">
+    <div className="px-4 my-8">
     <div  className="bg-gray-900 py-8 rounded-xl">
     <div>
       {/* Header */}
