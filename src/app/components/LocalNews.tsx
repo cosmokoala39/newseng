@@ -81,7 +81,7 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
               </p>
                 <Link
                   href={`/${item.category}/${item.slug}`}
-                  className="font-semibold  text-[15px]  leading-snug"
+                  className="font-medium  text-[15px]  leading-snug"
                 >
                   {item.title}
                 </Link>
