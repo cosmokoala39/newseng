@@ -12,7 +12,7 @@ export default function DetailHeader ({article}:DetailHeaderProps){
    return(
     <div className="w-full px-4 md:px-8 py-6">
      
-      <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-2">
+      <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-2 whitespace-nowrap overflow-x-auto">
         <Link href="/" className="text-gray-600 hover:text-black">
           <Home size={18} />
         </Link>
@@ -20,8 +20,10 @@ export default function DetailHeader ({article}:DetailHeaderProps){
         <Link href={`/${article.category}`}>
           <span className="capitalize text-gray-400 hover:text-gray-700">{article.category}</span>
         </Link>
-        /
-        <span className="capitalize text-gray-400">{article.slug}</span>
+        <span>/</span>
+        <span className="text-xs text-gray-400 truncate max-w-[150px] overflow-hidden text-ellipsis block">
+          {article.slug}
+        </span>
       </nav>
 
       

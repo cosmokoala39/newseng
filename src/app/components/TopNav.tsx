@@ -97,12 +97,12 @@ export default function TopNav() {
               </button>
             </div>            
             
-            <Link href="/politics" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Politics</Link>
-            <Link href="/business" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Business</Link>
-            <Link href="/health" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Health</Link>
-            <Link href="/sports" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Sports</Link>
-            <Link href="/science" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Science</Link>
-            <Link href="/technology" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Technology</Link>
+            <Link onClick={() => setMenuOpen(false)} href="/politics" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Politics</Link>
+            <Link onClick={() => setMenuOpen(false)} href="/business" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Business</Link>
+            <Link onClick={() => setMenuOpen(false)} href="/health" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Health</Link>
+            <Link onClick={() => setMenuOpen(false)} href="/sports" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Sports</Link>
+            <Link onClick={() => setMenuOpen(false)} href="/science" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Science</Link>
+            <Link onClick={() => setMenuOpen(false)} href="/technology" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Technology</Link>
 
             <div className="border-t border-gray-300">
               <Link href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">About</Link>
