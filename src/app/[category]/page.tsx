@@ -55,9 +55,9 @@ export default async function CategoryPage({ params }: PageProps) {
   return (
     <div className='mx-0 md:mx-8'>
       <CategoryHeader articles={articles}/>
-      <div className="flex flex-wrap mx-4">
+      <div className="flex flex-wrap mx-0">
         <div className="md:w-8/12 lg:w-9/12">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container  px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container  px-1">
              <ArticleCard article={featured} isFeatured />
              <div className="flex flex-col gap-4">
                {sideArticles.map((article, index) => (
@@ -70,7 +70,7 @@ export default async function CategoryPage({ params }: PageProps) {
               <ArticleCard key={article.slug ?? index} article={article} />
             ))}
           </div>
-        <CategoryImageBlock articles={articles}/>
+        
         <CategoryNews articles={articles}/>
         <CategoryImageBlock articles={articles}/>
         <CategoryNews articles={articles}/>

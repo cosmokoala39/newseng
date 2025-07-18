@@ -33,7 +33,7 @@ export default function TopNav() {
              {(scrolled || typeof window !== 'undefined' && window.innerWidth < 768) && (
                 <button
                   onClick={() => setMenuOpen(!menuOpen)}
-                  className="text-black hover:text-red-600 flex-col md:inline-flex"
+                  className="text-black hover:text-red-600 flex flex-col md:inline-flex"
                   aria-label="Menu"
                 >
                   <Menu className="w-5 h-5 mx-0.5" />

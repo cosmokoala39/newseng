@@ -16,7 +16,7 @@ export default function MostRead({ articles }: MostReadProps) {
     <div className="p-8 border-gray-300 border rounded bg-white max-w-md">
       <h2 className="text-xl font-bold mb-4">Most Read</h2>
       <ol className="space-y-4">
-        {articles.map((article, index) => (
+        {articles.slice(0,5).map((article, index) => (
           <li key={index} className="flex flex-col space-y-2 border-b border-b-gray-300  pb-4 last:border-none last:pb-0">
             <div className="flex items-center space-x-2">
               <span className="border border-red-600 text-red-600 font-bold rounded px-1.5">{index + 1}</span>

@@ -18,9 +18,7 @@ interface ArticleCardProps {
 export default function ArticleCard({ article, isFeatured = false }: ArticleCardProps) {
   return (
     <article
-      className={`bg-white mt-2 p-2 ${
-        isFeatured ? 'lg:col-span-2' : ''
-      } rounded  transition hover:shadow-md`}
+      className={`bg-white mt-2 p-2 ${isFeatured ? 'lg:col-span-2' : ''} mx-2 md:mx0`}
     >
       <Link href={`/${article.category}/${article.slug}`} className="block mb-4">
         <div className="rounded overflow-hidden relative aspect-video">

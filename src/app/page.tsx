@@ -46,11 +46,11 @@ export default function Home() {
   const sideArticles = others.slice(0, 2);
   return (
     <>
-    <div className='mx-0 md:mx-8 '>
+    <div className='mx-2 md:mx-8 '>
         <Mainheader/>
         <div className="flex flex-wrap mx-0 md:mx-4">
         <div className="md:w-8/12 lg:w-9/12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container  px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 container  ">
            <ArticleCard article={featured} isFeatured />
            <div className="flex flex-col gap-4 ml-2">
               {sideArticles.map((article, index) => (

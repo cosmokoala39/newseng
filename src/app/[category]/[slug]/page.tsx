@@ -63,7 +63,7 @@ export default async function Page({
     return(
         <div className='mx-0 md:mx-8'>
             <ShareMenu/>
-            <div className="flex flex-wrap mx-4">
+            <div className="flex flex-wrap mx-0">
                 <div className=" md:w-8/12 lg:w-9/12">
                     <DetailHeader article={article}/>
                     <ShareToolbar/>

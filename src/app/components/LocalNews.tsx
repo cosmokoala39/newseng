@@ -26,8 +26,8 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
     <div className="my-10 px-5 md:px-0">
       {/* Heading */}
       <div className="flex items-center justify-between mb-6 mt-3 border-t border-t-gray-300">
-        <h2 className="text-3xl font-bold mt-5">
-          <span className="font-bold"> News</span> In <span className='uppercase font-medium'>{category}</span>
+        <h2 className="text-3xl font-bold mt-8 mb-3">
+          <span className=""> News</span> In <span className='uppercase font-medium'>{category}</span>
         </h2>
         <Link href={`/${category}`} className="text-gray-900 font-semibold underline text-sm hover:no-underline">
           Show More <span aria-hidden>›</span>

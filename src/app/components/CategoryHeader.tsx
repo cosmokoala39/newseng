@@ -31,7 +31,7 @@ export default function CategoryHeader({ articles }: Props) {
       </nav>
 
       {/* Category Title */}
-      <h1 className="text-3xl font-bold capitalize mb-6">{category}</h1>
+      <h1 className="text-3xl font-bold mb-2 mt-5 uppercase">{category}</h1>
 
       {/* "At The Moment" Section */}
 <section className="hidden md:flex bg-gray-100 px-4 py-3 border-l-4 border-cyan-800 items-center gap-6">
