@@ -78,10 +78,10 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
           </span>
         </nav>
 
-        <h1 className="text-3xl font-bold capitalize mb-6">{article.title}</h1>
+        <h1 className="text-3xl font-bold capitalize mb-1">{article.title}</h1>
       </div>
 
-      <div className="ml-5 flex bg-white py-2 px-4 border border-gray-300 w-full  sm:block relative">
+      <div className="ml-4 mr-4 flex bg-white py-2 px-4 border  border-gray-300  sm:block relative">
         <ul className="flex items-center space-x-2">
           {items.map((item, index) => (
             <li
@@ -121,7 +121,7 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
           </li>
 
           
-          <li className="w-full px-8 py-2   flex justify-center items-center text-[#CB4C2E] text-sm uppercase tracking-wide">
+          <li className="w-full  py-2  mr-5  flex justify-center items-center text-[#CB4C2E] text-sm uppercase tracking-wide">
             {article.category}
           </li>
         </ul>
