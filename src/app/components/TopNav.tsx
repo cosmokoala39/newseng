@@ -47,7 +47,7 @@ export default function TopNav() {
                 alt="La Nouvelle République"
                 width={500}
                 height={100}
-                className={`h-auto transition-all duration-300 ${scrolled ? 'w-[150px] md:w-[150px] ' : 'w-[400px] md:w-[220px]'}`}
+                className={`h-auto transition-all duration-300  ${scrolled ? 'w-[150px] md:w-[150px] ' : 'w-[400px] md:w-[220px]'}`}
                 priority
               />
             </Link>

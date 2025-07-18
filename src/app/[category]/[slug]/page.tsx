@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import fs from "fs/promises";
 import path from "path";
 import DetailHeader from "../../components/DetailHeader";
-import ShareToolbar from "@/app/components/ShareToolbar";
+
 import Details from "@/app/components/Details";
 import ShareMenu from "@/app/components/ShareMenu";
 import CategorySideAd from "@/app/components/CategorySideAd";
@@ -14,6 +14,7 @@ import GastronomyFeature from "@/app/components/GastronomyFeature";
 
 
 
+
 interface Article {
   
   category: string;
@@ -22,6 +23,8 @@ interface Article {
   description: string;
   image: string;
   slug: string;
+  date?:string;
+  author?:string;
  
 }
 
@@ -66,9 +69,10 @@ export default async function Page({
             <div className="flex flex-wrap mx-0">
                 <div className=" md:w-8/12 lg:w-9/12">
                     <DetailHeader article={article}/>
-                    <ShareToolbar/>
+                    
                     
                     <Details article={article}/>
+                    
                 </div>
                 <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
                   <CategorySideAd/>

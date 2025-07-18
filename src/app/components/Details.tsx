@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DetailDate from "./DetailDate";
 
 
 
@@ -9,6 +10,8 @@ export type Article = {
   description: string;
   slug: string;
   category: string;
+  date?:string;
+  author?:string;
 };
 
 interface DetailsProps {
@@ -29,7 +32,12 @@ export default function Details ({article}:DetailsProps){
                   height={525} 
                   style={{maxHeight:"525px"}}
                 />
+                <div className="bg-gray-200 px-2 py-5 flex-col">
+                  {article.title}
+                  <p className="italic">© (Photo illustration NR, Alizée Golfier)</p>
+                </div>
             </div>
+            <DetailDate article={article}/>
             <div className="mt-5 mb-5">
             <strong >{article.shortdescription}</strong>
             </div>
