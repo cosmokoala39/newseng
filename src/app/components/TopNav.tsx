@@ -40,7 +40,7 @@ export default function TopNav() {
                   <p className="text-sm text-black font-semibold">Menu</p>
                 </button>
               )}
-            <div className={`${scrolled ? 'ml-5' : 'ml-16'}`}>
+            <div className={`ml-0 md:${scrolled ? 'ml-5' : 'ml-16'}`}>
             <Link href="/" aria-label="La Nouvelle République">
               <Image
                 src="https://www.lanouvellerepublique.fr/_next/static/svg/logo.3ee3466abe0d1c7768b5df3ee595f280.svg"
