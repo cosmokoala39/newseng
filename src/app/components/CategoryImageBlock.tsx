@@ -54,7 +54,7 @@ export default function CategoryImageBlock ({articles}:CategoryImageBlockProps) 
                   layout="responsive"
                   
                   className="transition-transform duration-300 group-hover:scale-105 rounded"
-                  style={{maxHeight:"180px" , objectFit:"cover",maxWidth:"750px"}}
+                  style={{maxHeight:"150px" , objectFit:"cover",maxWidth:"750px"}}
                 />
                 
               </Link>

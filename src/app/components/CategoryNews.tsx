@@ -38,7 +38,7 @@ export default function CategoryNews({ articles }: CategoryPageProps) {
             </Link>
             <div className="p-4">
               <p className="text-xs text-red-700 uppercase">{article.category}</p>
-              <h3 className="text-lg font-semibold leading-snug mt-1">
+              <h3 className="text-lg  leading-snug mt-1 text-gray-800">
                 <Link href={`${article.category}/${article.slug}`} className=" transition-colors">
                   {article.title}
                 </Link>

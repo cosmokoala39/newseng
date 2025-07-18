@@ -26,7 +26,7 @@ export default function MostRead({ articles }: MostReadProps) {
                 </span>
               )}
             </div>
-            <Link href={article.slug} className="text-sm text-black hover:underline" style={{marginLeft:"5px"}}>
+            <Link href={article.slug} className="text-sm text-black hover:underline ml-8" >
               {article.title}
             </Link>
           </li>

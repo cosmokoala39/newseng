@@ -38,13 +38,13 @@ export default function ArticleCard({ article, isFeatured = false }: ArticleCard
 
       <h2
         className={`font- leading-snug ${
-          isFeatured ? 'text-[26px]' : 'text-[18px]'
+          isFeatured ? 'text-[26px] font-[600]' : 'text-[18px] font-[500]'
         }`}
       >
         <Link href={`/${article.category}/${article.slug}`}>
-          <span className=" transition-colors cursor-pointer text-gray-800 font-[550]">
+          <p className=" transition-colors cursor-pointer text-gray-800 ">
             {article.title}
-          </span>
+          </p>
         </Link>
       </h2>
 

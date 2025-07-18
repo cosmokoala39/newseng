@@ -52,7 +52,7 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
               <p className="text-sm text-red-600 font-semibold uppercase">
                 {featured.tag || 'NEWS'} - 
               </p>
-              <h3 className="text-2xl font-medium mt-1 leading-tight">
+              <h3 className="text-2xl font-semibold mt-1 leading-tight">
                 <Link href={`/${featured.category}/${featured.slug}`}>
                   {featured.title}
                 </Link>
@@ -81,7 +81,7 @@ export default function LocalNews({ category, articles }: LocalNewsProps) {
               </p>
                 <Link
                   href={`/${item.category}/${item.slug}`}
-                  className="text-base  text-[15px]  leading-snug"
+                  className="font-semibold  text-[15px]  leading-snug"
                 >
                   {item.title}
                 </Link>
