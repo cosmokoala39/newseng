@@ -42,7 +42,7 @@ export default function Details ({article}:DetailsProps){
             <strong >{article.shortdescription}</strong>
             </div>
             <br />
-            <div>{article.description}</div>
+            <div  className="text-base text-gray-800 indent-8 leading-relaxed w-full">{article.description}</div>
         </div>
         </div>
     )
