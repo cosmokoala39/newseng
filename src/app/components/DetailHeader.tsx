@@ -74,7 +74,7 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
           </Link>
           <span>/</span>
          <span className="block max-w-[150px] truncate sm:max-w-none sm:whitespace-normal sm:overflow-visible sm:text-ellipsis-none">
-            {article.slug}
+            {article.title}
           </span>
         </nav>
 
