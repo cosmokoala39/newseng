@@ -3,19 +3,19 @@
 import Link from 'next/link';
 
 const links = [
-  {  label: 'Avis de décès', external: false },
-  {  label: 'Annonces immo', external: true },
-  {  label: 'Annonces Emploi', external: true },
-  {  label: 'Annonces Légales', external: false },
+  {  label: 'Obutuary', external: false },
+  {  label: 'Real estate', external: true },
+  {  label: 'Job Advertisement', external: true },
+  {  label: 'Legal Announcements', external: false },
   { label: 'Newsletters', external: false },
-  { label: 'Abonnements', external: true },
-  { label: 'Jeux', external: false },
-  {  label: 'Val de Loire TV', external: true },
+  { label: 'Subscriptions', external: true },
+  { label: 'Games', external: false },
+  {  label: 'Loire valley T.V', external: true },
 ];
 
 export default function HeaderLinks() {
   return (
-    <div className="bg-gray-400 h-[30px]  items-center overflow-x-auto whitespace-nowrap px-4 hidden md:block ">
+    <div className="bg-gray-400 h-[30px]  items-center overflow-x-hidden  whitespace-nowrap px-4 hidden md:block ">
       {links.map(({ label, external }) =>
         external ? (
           <a
