@@ -62,18 +62,18 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
   return (
     <>
       <div className="w-full px-2 md:px-5 py-6">
-        <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-2 whitespace-nowrap overflow-x-auto">
+        <nav className="flex items-center space-x-2 text-[16px]  text-blue-400 mb-2 whitespace-nowrap overflow-x-auto">
           <Link href="/" className="text-gray-600 hover:text-black">
             <Home size={18} />
           </Link>
           <span>&gt;</span>
           <Link href={`/${article.category}`}>
-            <span className="capitalize text-gray-400 hover:text-gray-700">
+            <span className="capitalize text-blue-400 hover:text-gray-700">
               {article.category}
             </span>
           </Link>
           <span>/</span>
-          <span className="text-xs text-gray-400 truncate max-w-[150px] overflow-hidden text-ellipsis block">
+         <span className="block max-w-[150px] truncate sm:max-w-none sm:whitespace-normal sm:overflow-visible sm:text-ellipsis-none">
             {article.slug}
           </span>
         </nav>
@@ -81,7 +81,7 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
         <h1 className="text-3xl font-bold capitalize mb-1">{article.title}</h1>
       </div>
 
-      <div className="ml-4 mr-4 flex bg-white py-2 px-4 border  border-gray-300  sm:block relative">
+      <div className="hidden   ml-4 mr-4  bg-white py-2 px-4 border  border-gray-300  sm:block relative">
         <ul className="flex items-center space-x-2">
           {items.map((item, index) => (
             <li

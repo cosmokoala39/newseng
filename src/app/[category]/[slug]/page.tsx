@@ -11,6 +11,8 @@ import MostRead from "@/app/components/MostRead";
 import CategorySideAd_2 from "@/app/components/CategorySideAd_2";
 import CategorySideAd_3 from "@/app/components/CategorySideAd_3";
 import GastronomyFeature from "@/app/components/GastronomyFeature";
+import ArticleTags from "@/app/components/ArticleTags";
+import ReporterInfo from "@/app/components/ReporterInfo";
 
 
 
@@ -72,7 +74,8 @@ export default async function Page({
                     
                     
                     <Details article={article}/>
-                    
+                    <ArticleTags/>
+                    <ReporterInfo/>
                 </div>
                 <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
                   <CategorySideAd/>
