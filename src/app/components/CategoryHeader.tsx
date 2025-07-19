@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { Home } from 'lucide-react';
 
 type Article = {
   title: string;
@@ -23,9 +22,7 @@ export default function CategoryHeader({ articles }: Props) {
     <div className="w-full px-4 md:px-8 py-6">
       {/* Breadcrumb */}
       <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-2">
-        <Link href="/" className="text-gray-600 hover:text-black">
-          <Home size={18} />
-        </Link>
+        
         <span>&gt;</span>
         <span className="capitalize text-gray-400">{category}</span>
       </nav>

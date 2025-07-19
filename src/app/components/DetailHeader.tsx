@@ -6,7 +6,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Home } from "lucide-react";
 import Link from "next/link";
 
 const items = [
@@ -63,9 +62,6 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
     <>
       <div className="w-full px-2 md:px-5 py-6">
         <nav className="flex items-center space-x-2 text-[16px]  text-blue-400 mb-2 whitespace-nowrap overflow-x-auto">
-          <Link href="/" className="text-gray-600 hover:text-black">
-            <Home size={18} />
-          </Link>
           <span>&gt;</span>
           <Link href={`/${article.category}`}>
             <span className="capitalize text-blue-400 hover:text-gray-700">
