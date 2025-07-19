@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Link from "next/link";
 
 const items = [
@@ -61,15 +62,18 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
   return (
     <>
       <div className="w-full px-2 md:px-5 py-6">
-        <nav className="flex items-center space-x-2 text-[16px]  text-blue-400 mb-2 whitespace-nowrap overflow-x-auto">
-          <span>&gt;</span>
-          <Link href={`/${article.category}`}>
-            <span className="capitalize text-blue-400 hover:text-gray-700">
+        <nav className="flex text-gray-400 items-center space-x-2 text-[16px]  mb-2 whitespace-nowrap overflow-x-auto">
+          <Link href="/" className="text-blue-400  hover:text-gray-700">
+            Home
+          </Link>
+          <span>/</span>
+          <Link href={`/${article.category}`} >
+            <span className=" capitalize text-blue-400 hover:text-gray-700">
               {article.category}
             </span>
           </Link>
           <span>/</span>
-         <span className="block max-w-[150px] truncate sm:max-w-none sm:whitespace-normal sm:overflow-visible sm:text-ellipsis-none">
+         <span className="block text-gray-400 max-w-[150px] truncate sm:max-w-none sm:whitespace-normal sm:overflow-visible sm:text-ellipsis-none">
             {article.title}
           </span>
         </nav>

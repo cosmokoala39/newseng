@@ -21,9 +21,11 @@ export default function CategoryHeader({ articles }: Props) {
   return (
     <div className="w-full px-4 md:px-8 py-6">
       {/* Breadcrumb */}
-      <nav className="flex items-center space-x-2 text-sm text-gray-400 mb-2">
-        
-        <span>&gt;</span>
+      <nav className="flex items-center space-x-2 text-[16px]  mb-2 whitespace-nowrap overflow-x-auto">
+         <Link href="/" className="text-blue-400  hover:text-gray-700">
+            Home
+          </Link>
+        <span className='text-gray-400'>/</span>
         <span className="capitalize text-gray-400">{category}</span>
       </nav>
 
