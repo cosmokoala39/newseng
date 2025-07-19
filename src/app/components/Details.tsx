@@ -27,11 +27,11 @@ export default function Details({ article }: DetailsProps) {
             alt={article.title}
             width={934}
             height={525}
-            className="w-full h-auto object-cover rounded-md max-h-[525px]"
+            className="w-full h-auto object-cover  max-h-[525px]"
             priority
           />
 
-          <div className="bg-gray-100 px-3 py-4 sm:px-4 sm:py-5 mt-2">
+          <div className="bg-gray-100 px-3 py-4 sm:px-4 sm:py-5">
             <h1 className="text-lg sm:text-xl font-semibold mb-1">{article.title}</h1>
             <p className="italic text-sm sm:text-base text-gray-600">
               © (Photo illustration NR, Alizée Golfier)
