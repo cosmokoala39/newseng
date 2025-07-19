@@ -7,10 +7,11 @@ import CategoryImageBlock from '../components/CategoryImageBlock';
 import CategoryNews from '../components/CategoryNews';
 import MostRead from '../components/MostRead';
 import CategorySideAd from '../components/CategorySideAd';
-import CategorySideAd_2 from '../components/CategorySideAd_2';
-import GastronomyFeature from '../components/GastronomyFeature';
+
+
 import FollowUs from '../components/FollowUs';
 import CategorySideAd_3 from '../components/CategorySideAd_3';
+import FloatingAd from '../components/FloatingAd';
 
 
 interface Article {
@@ -79,9 +80,9 @@ export default async function CategoryPage({ params }: PageProps) {
         <CategorySideAd/>
         <FollowUs/>
       <MostRead articles={articles}/>
-      <CategorySideAd_2/>
+     
       <CategorySideAd_3/>
-      <GastronomyFeature/>
+      <FloatingAd/>
       </div>
       </div>    
       
