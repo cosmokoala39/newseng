@@ -18,6 +18,22 @@ interface DetailsProps {
 }
 
 export default function Details({ article }: DetailsProps) {
+
+function splitIntoParagraphs(text: string, sentencesPerParagraph = 3) {
+  // Split sentences safely (preserves things like "U.S." and emails)
+  const sentences = text.match(/[^.!?]+[.!?](?=\s|$)/g) || [];
+
+  // Group every `sentencesPerParagraph` into a paragraph
+  const paragraphs = [];
+  for (let i = 0; i < sentences.length; i += sentencesPerParagraph) {
+    const group = sentences.slice(i, i + sentencesPerParagraph).join(' ').trim();
+    paragraphs.push(group);
+  }
+
+  return paragraphs;
+}
+
+
   return (
     <div className="relative">
       <div className="p-4 ">
@@ -45,15 +61,12 @@ export default function Details({ article }: DetailsProps) {
           <strong className="block  text-base sm:text-xl ">{article.shortdescription}</strong>
         </div>
 
-        <div className="text-sm sm:text-base text-gray-800 indent-6 sm:indent-8 leading-relaxed w-full">
-          {article.description
-            .split('.')
-            .filter(Boolean)
-            .map((sentence, index) => (
-              <span key={index}>
-                {sentence.trim()}.<br /><br />
-              </span>
-            ))}
+       <div className="text-sm sm:text-base text-gray-800 leading-relaxed w-full">
+          {splitIntoParagraphs(article.description, 3).map((paragraph, idx) => (
+            <p key={idx} className="mb-4 indent-6 sm:indent-8">
+              {paragraph}
+            </p>
+          ))}
         </div>
               <div className="uppercase text-[18px] text-gray-600 mt-5"><span>&gt;</span> also read <Link href="#" className="text-red-600 hover:underline"> DPE: 850,000 homes will no longer be considered energy sieves</Link></div>
 
