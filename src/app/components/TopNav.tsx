@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Menu, Search} from 'lucide-react';
@@ -41,16 +41,11 @@ export default function TopNav() {
                 </button>
               )}
             <div className={`ml-0 md:${scrolled ? 'ml-5' : 'ml-16'}`}>
-            <Link href="/" aria-label="La Nouvelle République">
-              <Image
-                src="https://www.lanouvellerepublique.fr/_next/static/svg/logo.3ee3466abe0d1c7768b5df3ee595f280.svg"
-                alt="La Nouvelle République"
-                width={500}
-                height={100}
-                className={`h-auto transition-all duration-300  ${scrolled ? 'w-[150px] md:w-[150px] ' : 'w-[400px] md:w-[220px]'}`}
-                priority
-              />
-            </Link>
+            <div className={`h-auto transition-all duration-300  ${scrolled ? 'w-[150px] md:w-[150px] ' : 'w-[150px] md:w-[320px]'}`}>
+              <Link href="/" >
+                <h1 className={`${scrolled ? 'font-semibold text-2xl ' : 'text-2xl font-semibold md:font-bold md:text-4xl '}`}>Intellexa <br /> Journal <span className='text-red-600'>.com</span></h1>
+              </Link>
+            </div>
           </div>
           </div>
           {/* Right Section: Icons */}
