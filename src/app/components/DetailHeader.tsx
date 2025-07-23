@@ -73,7 +73,7 @@ export default function DetailHeader({ article }: DetailHeaderProps) {
             </span>
           </Link>
           <span>/</span>
-         <span className="block text-gray-400 max-w-[150px] truncate sm:max-w-none sm:whitespace-normal sm:overflow-visible sm:text-ellipsis-none">
+         <span className="block text-gray-400 truncate whitespace-nowrap overflow-hidden max-w-[150px] sm:max-w-[650px]">
             {article.title}
           </span>
         </nav>

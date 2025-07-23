@@ -11,8 +11,9 @@ import MostRead from "@/app/components/MostRead";
 import CategorySideAd_3 from "@/app/components/CategorySideAd_3";
 
 import ArticleTags from "@/app/components/ArticleTags";
-import ReporterInfo from "@/app/components/ReporterInfo";
+
 import FloatingAd from "@/app/components/FloatingAd";
+import ClientDetails from "@/app/components/ClientDetails";
 
 
 
@@ -64,18 +65,23 @@ export default async function Page({
     const article = articles.find((a) => a.slug === slug);
 
     if (!article) return notFound();
-// const isClientSlug = category==="politics" && slug === "puerto-ricos-former-governor-vindicated-in-historic-legal-twist";
+  const isClientSlug = category==="politics" && slug === "misunderstood-chapter-story-battle-stability-during-pandemic";
     return(
         <div className='mx-0 md:mx-12'>
             <ShareMenu/>
             <div className="flex flex-wrap mx-0">
                 <div className=" md:w-8/12 lg:w-9/12">
                     <DetailHeader article={article}/>
-                    
-                    
-                    <Details article={article}/>
+                   {
+                    isClientSlug ? (
+                      <ClientDetails article={article}/>
+                    ):(
+                      <Details article={article}/>
+                    )
+                   }
+
                     <ArticleTags/>
-                    <ReporterInfo/>
+                    
                 </div>
                 <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
                   <CategorySideAd/>
