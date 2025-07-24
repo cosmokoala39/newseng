@@ -63,7 +63,7 @@ function splitIntoParagraphs(text: string, sentencesPerParagraph = 3) {
 
        <div className="text-sm sm:text-base text-gray-800 leading-relaxed w-full">
           {splitIntoParagraphs(article.description, 3).map((paragraph, idx) => (
-            <p key={idx} className="mb-4 indent-6 sm:indent-8">
+            <p key={idx} className="mb-4 text-justify">
               {paragraph}
             </p>
           ))}

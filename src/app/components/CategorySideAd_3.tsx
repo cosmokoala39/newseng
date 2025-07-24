@@ -11,7 +11,7 @@ const CategorySideAd_3 = () => {
                       alt="couverture journal" 
                       width={300} 
                       height={300} 
-                      src="/images/SidebarAd4.webp" 
+                      src="/images/SidebarAd4.jpg" 
                       className="w-[300px] h-[300px] shadow-md" 
                     />        
               </div>

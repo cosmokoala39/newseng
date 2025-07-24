@@ -10,7 +10,7 @@ import CategorySideAd from '../components/CategorySideAd';
 
 
 import FollowUs from '../components/FollowUs';
-import CategorySideAd_3 from '../components/CategorySideAd_3';
+
 import FloatingAd from '../components/FloatingAd';
 
 
@@ -100,7 +100,7 @@ export default async function CategoryPage({ params }: PageProps) {
         <FollowUs/>
       <MostRead articles={articles}/>
      
-      <CategorySideAd_3/>
+    
       <FloatingAd/>
       </div>
       </div>    

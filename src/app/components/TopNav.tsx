@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Menu, Search} from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
 
 export default function TopNav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,9 +42,21 @@ export default function TopNav() {
                 </button>
               )}
             <div className={`ml-0 md:${scrolled ? 'ml-5' : 'ml-16'}`}>
-            <div className={`h-auto transition-all duration-300  ${scrolled ? 'w-[150px] md:w-[150px] ' : 'w-[150px] md:w-[320px]'}`}>
-              <Link href="/" >
-                <h1 className={`${scrolled ? 'font-semibold text-2xl ' : 'text-2xl font-semibold md:font-bold md:text-4xl '}`}>Intellexa <br /> Journal <span className='text-red-600'>.com</span></h1>
+            <div className="transition-all duration-300">
+              <Link href="/" className="flex items-center gap-4">
+                <Image
+                  src="/logo.webp"
+                  alt="logo"
+                  width={64}
+                  height={64}
+                  className={`object-cover ${scrolled ? 'w-[32px]  md:w-[50px] h-[32px] md:h-[50px]':' w-[32px] md:w-[70px] h-[32px] md:h-[70px] '}`}
+                />
+                <div className={`flex flex-col font-semibold leading-tight ${scrolled ? 'text-xl  md:text-2xl':'text-xl  md:text-4xl'}`}>
+                  <h2>Intellexa</h2>
+                  <h2>
+                    Journul<span className='text-red-600'>.com</span>
+                  </h2>
+                </div>
               </Link>
             </div>
           </div>

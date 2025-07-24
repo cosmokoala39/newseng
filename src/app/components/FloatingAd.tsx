@@ -10,7 +10,7 @@ export default function FloatingAd () {
                             alt="couverture journal" 
                             width={300} 
                             height={300} 
-                            src="/images/SidebarAd2.webp" 
+                            src="/images/SidebarAd2.jpg" 
                             className="w-[300px] h-[300px] shadow-md" 
                           />        
                     </div>

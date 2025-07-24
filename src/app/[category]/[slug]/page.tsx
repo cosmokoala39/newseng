@@ -8,7 +8,7 @@ import ShareMenu from "@/app/components/ShareMenu";
 import CategorySideAd from "@/app/components/CategorySideAd";
 import FollowUs from "@/app/components/FollowUs";
 import MostRead from "@/app/components/MostRead";
-import CategorySideAd_3 from "@/app/components/CategorySideAd_3";
+
 
 import ArticleTags from "@/app/components/ArticleTags";
 
@@ -88,7 +88,7 @@ export default async function Page({
                   <FollowUs/>
                 <MostRead articles={articles}/>
                 
-                <CategorySideAd_3/>
+                
                 <FloatingAd/>
                 </div>
             </div>    

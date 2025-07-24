@@ -26,7 +26,7 @@ export default function MainMostread  ({ articles } : MainMostreadProps)  {
                 </span>
               )}
             </div>
-            <Link href={article.slug} className="text-sm text-black ml-10 hover:underline" >
+            <Link href={`${article.category}/${article.slug}`} className="text-sm text-black ml-10 hover:underline" >
               {article.title}
             </Link>
           </li>

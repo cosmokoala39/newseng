@@ -4,16 +4,13 @@ import health from "../data/health.json"
 import science from "../data/science.json"
 import sports from "../data/sports.json"
 import technology from "../data/technology.json"
-
 import Mainheader from "./components/Mainheader";
 import ArticleCard from "./components/ArticleCard"
 import CategoryImageBlock from "./components/CategoryImageBlock"
 import CategorySideAd from './components/CategorySideAd';
 import FollowUs from './components/FollowUs';
-
 import MainMostread from './components/MainMostread';
 import CategorySideAd_2 from './components/CategorySideAd_2';
-import CategorySideAd_3 from './components/CategorySideAd_3';
 import RealEstateLinks from './components/RealEstateLinks';
 import FloatingAd from './components/FloatingAd';
 import LocalNews from './components/LocalNews';
@@ -92,7 +89,7 @@ export default function Home() {
             <FollowUs/>
               <MainMostread  articles={others.slice(0,5)} />
               <CategorySideAd_2/>
-              <CategorySideAd_3/>
+             
               <RealEstateLinks/>
               <FloatingAd/>
           </div>

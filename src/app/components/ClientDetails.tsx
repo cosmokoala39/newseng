@@ -96,79 +96,79 @@ export default function ClientDetails({article}:ClientDetailsProps){
         <div className="mt-5 mb-5 ">
           <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading1}</h3>
         </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para1}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para1}</p>
           <br />
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para2}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para2}</p>
           <br />
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para3}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para3}</p>
         <div className="mt-5 mb-5 ">
           <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading2}</h3>
         </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para4}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para4}</p>
           <br />
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para5}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para5}</p>
           <br />
           <p className="ml-2">
             Their investments weren’t limited to balance sheets. 
           </p>
           <br />
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para6}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para6}</p>
           <br />
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para7}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para7}</p>
           <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading3}</h3>
           </div>
            
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para8}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para8}</p>
            <br />
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para9}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para9}</p>
            <br />
           
           <p className="ml-2">Yet, what followed would be mischaracterized as a federal bribery conspiracy</p>
         <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading4}</h3>
           </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para10}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para10}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para11}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para11}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para12}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para12}</p>
         
           <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading5}</h3>
           </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para13}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para13}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para14}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para14}</p>
             <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading9}</h3>
           </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para22}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para22}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para23}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para23}</p>
     
           <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading6}</h3>
           </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para15}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para15}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para16}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para16}</p>
          
           <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading7}</h3>
           </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para17}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para17}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para18}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para18}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para19}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para19}</p>
           
           <div className="mt-5 mb-5 ">
             <h3 className="text-xl font-normal  text-red-600 text-[22px]">{data.heading8}</h3>
           </div>
-          <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para20}</p>
+          <p className="leading-relaxed text-justify ml-2 " >{data.para20}</p>
            <br />
-           <p className="leading-relaxed text-justify ml-2 " style={{textIndent:"2em"}}>{data.para21}</p>
+           <p className="leading-relaxed text-justify ml-2 " >{data.para21}</p>
            <br />
         </div>
               <div className="uppercase text-[18px] text-gray-600 mt-5"><span>&gt;</span> also read <Link href="#" className="text-red-600 hover:underline"> DPE: 850,000 homes will no longer be considered energy sieves</Link></div>
