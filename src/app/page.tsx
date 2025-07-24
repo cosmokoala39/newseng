@@ -31,8 +31,9 @@ type Article ={
 }
 
 const mergedArticles: Article[] = [
-  ...health,
+  
   ...business,
+  ...health,
   ...politics,
   ...sports,
   ...science,
@@ -77,19 +78,19 @@ export default function Home() {
           <LocalNews category="technology" articles={mergedArticles} />
           <div className='text-3xl font-bold mt-5 mb-5 px-5'>All The News</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {mergedArticles.slice(0,12).map((article, index) => (
+            {mergedArticles.slice(21,33).map((article, index) => (
               <ArticleCard key={article.slug ?? index} article={article} />
             ))}
           </div>
           <div className="w-full mb-14">
-           <ToggleContentWithLoading mergedArticles={mergedArticles}/>
+           <ToggleContentWithLoading mergedArticles={mergedArticles.slice(33)}/>
          </div>
          </div>
 
          <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
             <CategorySideAd/>
             <FollowUs/>
-              <MainMostread  articles={others.slice(17)} />
+              <MainMostread  articles={others.slice(0,5)} />
               <CategorySideAd_2/>
               <CategorySideAd_3/>
               <RealEstateLinks/>

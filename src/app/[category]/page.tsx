@@ -4,7 +4,7 @@ import path from 'path';
 import CategoryHeader from '../components/CategoryHeader';
 import ArticleCard from '../components/ArticleCard';
 import CategoryImageBlock from '../components/CategoryImageBlock';
-import CategoryNews from '../components/CategoryNews';
+
 import MostRead from '../components/MostRead';
 import CategorySideAd from '../components/CategorySideAd';
 
@@ -29,6 +29,21 @@ interface PageProps {
   params: Promise<{ category: Category }>;
 }
 
+
+export async function generateStaticParams() {
+  const categories: Category[] = [
+    'politics',
+    'business',
+    'technology',
+    'sports',
+    'science',
+    'health',
+  ];
+
+  return categories.map((category) => ({
+    category,
+  }));
+}
 
 async function getArticlesByCategory(category: string): Promise<Article[] | null> {
   try {
@@ -67,14 +82,18 @@ export default async function CategoryPage({ params }: PageProps) {
              </div>
            </div>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {others.slice(3).map((article, index) => (
+            {others.slice(3,9).map((article, index) => (
               <ArticleCard key={article.slug ?? index} article={article} />
             ))}
           </div>
         
-        <CategoryNews articles={articles}/>
+        
         <CategoryImageBlock articles={articles}/>
-        <CategoryNews articles={articles}/>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {others.slice(9).map((article, index) => (
+              <ArticleCard key={article.slug ?? index} article={article} />
+            ))}
+        </div>
         </div>
         <div className="w-full md:w-1/3 lg:w-1/4 rounded relative">
         <CategorySideAd/>
