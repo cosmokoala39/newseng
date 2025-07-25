@@ -54,7 +54,7 @@ export default function TopNav() {
                 <div className={`flex flex-col font-semibold leading-tight ${scrolled ? 'text-xl  md:text-2xl':'text-xl  md:text-4xl'}`}>
                   <h2>Intellexa</h2>
                   <h2>
-                    Journul<span className='text-red-600'>.com</span>
+                    Journul
                   </h2>
                 </div>
               </Link>
